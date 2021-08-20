@@ -1,5 +1,6 @@
 -var titulo = "Título en una variable"
 -var titulos = ["Título Principal","Título 1", "Título 2", "Título 3"]
+-var usuario = "Cosito"
 
 doctype html
 html(lang="es")
@@ -14,7 +15,12 @@ html(lang="es")
   body
     header 
       h1 PlatziGames
-      a.boton registro
+
+      //- Ciclo if
+      if usuario
+        a Hola #{usuario}
+      else
+        a.boton registro
 
     section.intro 
       div.intro__imagen: img(src="./images/imagen.png" alt="Imagen generica")
@@ -24,4 +30,11 @@ html(lang="es")
           | Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt et reiciendis nemo hic error dignissimos. Sequi fugit in non optio laborum dolore ipsam? Quia dolorum aliquid ut consectetur amet.
           span Proin sed urna quis orci interdum rutrum. Integer rhoncus finibus nunc, ac porttitor ex dapibus ac.
         a.boton Ver Mas
+    
+    section 
+      ul
+        //- Ciclo each
+        each e in titulos
+          li #{e}
   //- Fin body
+//- Fin HTML
