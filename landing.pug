@@ -1,6 +1,16 @@
 -var titulo = "Título en una variable"
 -var titulos = ["Título Principal","Título 1", "Título 2", "Título 3"]
 -var usuario = "Cosito"
+-var textoLorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt et reiciendis nemo hic error dignissimos."
+
+//-Mixin's
+//-Los mixin's se declaran al principio del documento, antes de desarrollar el contenido de HTML
+mixin caja(imagen,titulo,contenido)
+  article.caja
+    figure.caja__imagen: img(src="./images/"+imagen, alt="Imagen generica")
+    .caja__contenido
+      h3 #{titulo}
+      p #{contenido}
 
 doctype html
 html(lang="es")
@@ -31,10 +41,10 @@ html(lang="es")
           span Proin sed urna quis orci interdum rutrum. Integer rhoncus finibus nunc, ac porttitor ex dapibus ac.
         a.boton Ver Mas
     
-    section 
-      ul
-        //- Ciclo each
-        each e in titulos
-          li #{e}
+    main.contenido
+      //-Los mixin's se llaman con un signo + segido del nombre del mixin
+      +caja('imagen.png',titulos[1],textoLorem)
+      +caja('imagen.png',titulos[2],textoLorem)
+      +caja('imagen.png',titulos[3],textoLorem)
   //- Fin body
 //- Fin HTML
