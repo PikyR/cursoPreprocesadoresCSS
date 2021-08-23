@@ -1,4 +1,16 @@
 extends ./componentes/plantilla.pug
 
 block contenidos
-  h2 desafio
+  main.desafio-container
+    
+    aside.desafio__section.desafio__section--left
+      h3 Menu
+      ul.desafio__menu-list 
+        each link in links
+          li.desafio__menu-link #{link}
+    
+    section.desafio__section
+      h2 #{titulos[0]}
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus perspiciatis qui vero dolor consectetur quia nisi culpa dolorem quae beatae nulla similique blanditiis nostrum, impedit itaque reprehenderit illum quibusdam?
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus perspiciatis qui vero dolor consectetur quia nisi culpa dolorem quae beatae nulla similique blanditiis nostrum, impedit itaque reprehenderit illum quibusdam?
+      a.boton Ver mas

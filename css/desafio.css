@@ -1,0 +1,32 @@
+.desafio-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  
+  width: 100%;  
+}
+.desafio__section{
+  padding: 80px;
+}
+
+.desafio__section--left{
+  width: 40%;
+  min-width: 280px;
+
+  background-color: #EEF1F7;
+}
+
+.desafio__menu-list{
+  margin: 0;
+  padding-left: 0;
+
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;;
+  font-weight: bold;
+  color: #3753a0;
+}
+.desafio__menu-link{
+  margin: 35px 0;
+  list-style: none;
+}
