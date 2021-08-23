@@ -1,0 +1,28 @@
+-var titulo = "Título en una variable"
+-var titulos = ["Título Principal","Título 1", "Título 2", "Título 3"]
+-var usuario = "Cosito"
+-var textoLorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+
+//-Mixin's
+//-Los mixin's se declaran al principio del documento, antes de desarrollar el contenido de HTML
+mixin caja(imagen,titulo,contenido)
+  article.caja
+    figure.caja__imagen: img(src="./images/"+imagen, alt="Imagen generica")
+    .caja__contenido
+      h3 #{titulo}
+      p #{contenido}
+
+doctype html
+html(lang="es")
+  include head.pug
+  body
+    header 
+      h1 PlatziGames
+
+      //- Ciclo if
+      if usuario
+        a Hola #{usuario}
+      else
+        a.boton registro
+    
+    block contenidos
