@@ -24,16 +24,16 @@
     left: 0;
     right: 0;
     text-align: center;
-    color: white;
+    color: @color-claro;
   }
 
   &__categoria {
-    font-family: 'Oswald', sans-serif;
+    font-family: @fuente-titulo;
     text-transform: uppercase;
   }
 
   &__titulo {
-    font-family: 'Oswald', sans-serif;
+    font-family: @fuente-titulo;
     text-transform: uppercase;
     font-size: 5rem;
   }
@@ -45,7 +45,7 @@
     top: 400px;
     left: 0;
     right: 0;
-    color: white;
+    color: @color-claro;
 
     img{
       width: 60px;
@@ -57,6 +57,11 @@
 
     span{
       display: inline-block;
+      padding-top: 5px;
+    }
+
+    &-nombre {
+      font-weight: bold;
     }
   }
 }

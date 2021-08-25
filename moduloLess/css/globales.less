@@ -1,3 +1,11 @@
+@color-primario: #333333;
+@color-secundario: #8841DA;
+@color-variacion: #012179;
+@color-claro: #FFFFFF;
+
+@fuente-txt: 'Lato', sans-serif;
+@fuente-titulo: 'Oswald', sans-serif;
+
 *{
   margin: 0;
   padding: 0;
@@ -7,12 +15,13 @@ html{
   font-size: 62.5%;
 }
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: @fuente-txt;
   font-size: 1.6rem;
+  color: @color-primario;
 }
 
 h1,
 h2,
 h3{
-  font-family: 'Oswald', sans-serif;
+  font-family: @fuente-titulo;
 }
