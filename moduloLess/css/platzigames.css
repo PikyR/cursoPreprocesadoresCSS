@@ -45,6 +45,7 @@ h3 {
 .intro__categoria {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
 }
 .intro__titulo {
   font-family: 'Oswald', sans-serif;
@@ -71,12 +72,19 @@ h3 {
   display: inline-block;
   padding-top: 5px;
 }
+.intro__autor-titulo {
+  color: rgba(255, 255, 255, 0.5);
+}
 .intro__autor-nombre {
   font-weight: bold;
 }
 .articulo--principal {
   max-width: 660px;
   margin: 0 auto;
+  line-height: 2.8rem;
+}
+.articulo--principal__intro {
+  font-size: 2.6rem;
 }
 .articulo--principal p {
   padding-bottom: 1.6rem;
