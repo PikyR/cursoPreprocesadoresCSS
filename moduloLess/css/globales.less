@@ -1,12 +1,29 @@
+// VARIABLES //
+// - Colores
 @color-primario: #333333;
 @color-secundario: #8841DA;
 @color-variacion: #012179;
 @color-claro: #FFFFFF;
 
+// - Tipografias
 @fuente-txt: 'Lato', sans-serif;
 @fuente-titulo: 'Oswald', sans-serif;
 
+// - Tamaños de fuente
 @font-size-base: 1.8rem;
+// FIN VARIABLES
+
+// MIXINS //
+.sombra-caja{
+  box-shadow: 0px 5px 15px 0px fade(@color-primario, 30%);
+}
+
+.font-oswald{
+  font-family: @fuente-titulo;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+// FIN MIXINS //
 
 *{
   margin: 0;
@@ -17,6 +34,7 @@ html{
   font-size: 62.5%;
 }
 body{
+  padding: 0 5px;
   font-family: @fuente-txt;
   font-size: 1.6rem;
   color: @color-primario;
@@ -25,5 +43,5 @@ body{
 h1,
 h2,
 h3{
-  font-family: @fuente-titulo;
+  .font-oswald();
 }

@@ -1,0 +1,33 @@
+.contenedor--cajas {
+  width: 1400px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caja {
+  max-width: 430px;
+  .sombra-caja();
+
+  //&__imagen {}
+
+  &__contenido {
+    padding: 25px;
+    background-color: @color-claro;
+  }
+
+  &__categoria {
+    color: @color-secundario;
+    .font-oswald();
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: @color-variacion;
+    .font-oswald();
+  }
+}
