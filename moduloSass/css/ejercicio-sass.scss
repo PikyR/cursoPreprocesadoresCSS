@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.perfil {
+  width: 50%;
+  padding-top: 50px;
+
+  &__avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4.5rem;
+  }
+
+  &__nombre {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__titulo {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &__boton {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 15px auto;
+    padding-top: 15px; //REVISAR
+    border-radius: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    // background-color: aqua;
+  }
+}
