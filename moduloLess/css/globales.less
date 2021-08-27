@@ -11,6 +11,9 @@
 
 // - Tamaños de fuente
 @font-size-base: 1.8rem;
+
+//- otros
+@dark-mode: true;
 // FIN VARIABLES
 
 // MIXINS //
@@ -28,6 +31,34 @@
   font-size: @font-size;
   line-height: @font-size + 1rem;
 }
+
+.dark-mode() when (@dark-mode = true) {
+  background-color: @color-primario;
+  color: @color-claro;
+  .intro{      
+    background-color: @color-secundario;
+  }
+
+  .articulo--principal{
+    h2{
+      color: @color-secundario;
+    }
+  }
+
+  .caja{
+    &__contenido {
+      background-color: @color-secundario;
+    }
+
+    &__categoria {
+      color: fade(@color-claro, 40%);
+    }
+
+    a{
+      color: fade(@color-claro, 70%);
+    }
+  }
+}
 // FIN MIXINS //
 
 *{
@@ -43,6 +74,7 @@ body{
   font-family: @fuente-txt;
   color: @color-primario;
   .font-general(@font-size-base);
+  .dark-mode();
 }
 
 h1,
