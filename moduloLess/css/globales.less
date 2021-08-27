@@ -23,6 +23,11 @@
   text-transform: uppercase;
   font-weight: 700;
 }
+
+.font-general(@font-size) {
+  font-size: @font-size;
+  line-height: @font-size + 1rem;
+}
 // FIN MIXINS //
 
 *{
@@ -36,8 +41,8 @@ html{
 body{
   padding: 0 5px;
   font-family: @fuente-txt;
-  font-size: 1.6rem;
   color: @color-primario;
+  .font-general(@font-size-base);
 }
 
 h1,
