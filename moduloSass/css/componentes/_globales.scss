@@ -19,6 +19,13 @@ $color-variacion: #3f579a;
   background-color: $color-claro;
 }
 
+//
+// FINCIONES 
+
+@function get-opacity($color, $nivel) {
+  @return rgba($color, $nivel);
+}
+
 * {
   margin: 0;
   padding: 0;

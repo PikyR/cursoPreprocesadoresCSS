@@ -24,5 +24,6 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     font-family: $fuente-titulo;
+    color: get-opacity($color-pimario-oscuro, 0.50);
   }
 }
