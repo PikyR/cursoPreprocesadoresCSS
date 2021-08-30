@@ -13,14 +13,12 @@
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $fuente-titulo;
+    @include fuentes($fuente-titulo);
   }
   span {
     font-size: 1.2rem;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $fuente-titulo;
     color: get-opacity($color-pimario-oscuro, .50);
+    @include fuentes($fuente-titulo);
   }
 }

@@ -19,11 +19,30 @@ $color-variacion: #3f579a;
   background-color: $color-claro;
 }
 
+@mixin fuentes($fuentes) {
+  @if $fuentes==$fuente {
+    font-family: $fuente;
+  }
+  @else{
+    font-family: $fuente-titulo;
+    text-transform: uppercase;
+  }
+}
+
 //
 // FINCIONES 
 
 @function get-opacity($color, $nivel) {
   @return rgba($color, $nivel);
+}
+
+//
+// LOOPS
+
+@each $header, $size in (h1: 3rem, h2: 2.5rem, h3: 2rem) {
+  #{$header} {
+    font-size: $size;
+  }
 }
 
 * {
@@ -36,7 +55,8 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: $fuente;
+  // font-family: $fuente;
+  @include fuentes($fuente)
 }
 main {
   display: flex;
