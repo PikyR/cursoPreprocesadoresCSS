@@ -1,3 +1,6 @@
+//
+//  VARIABLES
+
 $fuente: "Lato", sans-serif;
 $fuente-titulo: "Oswald", sans-serif;
 
@@ -5,6 +8,16 @@ $color-pimario-oscuro: #333333;
 $color-claro: #ffffff;
 $color-secundario: #8841da;
 $color-variacion: #3f579a;
+
+//
+//  MIXIN's
+
+@mixin caja {
+  border-radius: 20px;
+  box-shadow: 0px 20px 33px 0px rgba($color: $color-pimario-oscuro, $alpha: 0.40);
+  color: $color-pimario-oscuro;
+  background-color: $color-claro;
+}
 
 * {
   margin: 0;

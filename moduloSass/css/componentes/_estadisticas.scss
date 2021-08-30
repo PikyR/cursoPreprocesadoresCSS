@@ -5,8 +5,7 @@
   padding-top: 15px;
   margin: 0 auto;
   justify-content: space-around;
-  border-radius: 20px;
-  background-color: $color-claro;
+  @include caja;
 }
 .estadistica_elemento {
   color: $color-pimario-oscuro;
