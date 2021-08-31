@@ -54,12 +54,13 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
-  // font-family: $fuente;
+  font-size: 1.8rem;
   @include fuentes($fuente)
 }
 main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  
 }
