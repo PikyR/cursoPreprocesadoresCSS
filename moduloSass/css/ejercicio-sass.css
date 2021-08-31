@@ -31,6 +31,33 @@ main {
   height: auto;
   min-height: 100vh;
 }
+main .perfil {
+  background-color: #fbfbfb;
+}
+main .perfil__avatar {
+  border-radius: 2rem;
+}
+main .perfil__nombre, main .perfil__minibio h2, .perfil__minibio main h2 {
+  color: #8841da;
+}
+main .perfil__titulo, main .perfil__minibio h3, .perfil__minibio main h3 {
+  color: #3f579a;
+}
+main .perfil__boton {
+  padding-top: 6px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+}
+main .articulos {
+  background-color: #333333;
+}
+main .articulo__titulo {
+  color: #ffffff;
+}
+main .articulo__descripcion {
+  color: #ffffff;
+}
 
 .perfil {
   width: 50%;
@@ -185,6 +212,7 @@ main {
   text-transform: uppercase;
 }
 .articulos .articulo__titulo {
+  margin: 5px 0;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;

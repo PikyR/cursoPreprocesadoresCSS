@@ -6,15 +6,59 @@ $fuente-titulo: "Oswald", sans-serif;
 
 $color-pimario-oscuro: #333333;
 $color-claro: #ffffff;
+$color-claro-dm: #fbfbfb;
 $color-secundario: #8841da;
 $color-variacion: #3f579a;
+
+$dark-mode: true;
 
 //
 //  MIXIN's
 
+@mixin dark-mode {
+  @if $dark-mode == true {
+    .perfil {
+      background-color: $color-claro-dm;
+
+      &__avatar {
+        border-radius: 2rem;
+      }
+
+      &__nombre {
+        color: $color-secundario;
+      }
+
+      &__titulo {
+        color: $color-variacion;
+      }
+
+      &__boton {
+        padding-top: 6px;
+        background-color: $color-pimario-oscuro;
+        color: $color-claro;
+        border: none;
+      }
+    }
+
+    .articulos{
+      background-color: $color-pimario-oscuro;
+    }
+
+    .articulo {
+      &__titulo {
+        color: $color-claro;        
+      }
+
+      &__descripcion {
+        color: $color-claro;
+      }
+    }
+  }
+}
+
 @mixin caja {
   border-radius: 20px;
-  box-shadow: 0px 20px 33px 0px rgba($color: $color-pimario-oscuro, $alpha: 0.40);
+  box-shadow: 0px 20px 33px 0px rgba($color: $color-pimario-oscuro, $alpha: 0.4);
   color: $color-pimario-oscuro;
   background-color: $color-claro;
 }
@@ -22,15 +66,14 @@ $color-variacion: #3f579a;
 @mixin fuentes($fuentes) {
   @if $fuentes==$fuente {
     font-family: $fuente;
-  }
-  @else{
+  } @else {
     font-family: $fuente-titulo;
     text-transform: uppercase;
   }
 }
 
 //
-// FINCIONES 
+// FINCIONES
 
 @function get-opacity($color, $nivel) {
   @return rgba($color, $nivel);
@@ -55,11 +98,13 @@ html {
 }
 body {
   font-size: 1.8rem;
-  @include fuentes($fuente)
+  @include fuentes($fuente);
 }
 main {
   display: flex;
   width: 100%;
   height: auto;
   min-height: 100vh;
+
+  @include dark-mode;
 }
