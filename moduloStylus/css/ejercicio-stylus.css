@@ -11,6 +11,20 @@ body {
   font-size: 1.6rem;
   color: #333;
 }
+.estadistica--articulos {
+  height: 70px;
+  padding: 20px;
+  border-top: 1px solid rgba(51,51,51,0.3);
+  display: flex;
+  justify-content: space-evenly;
+}
+.estadistica--articulos li {
+  list-style: none;
+  color: rgba(51,51,51,0.3);
+span
+  display: inline-block;
+  margin-left: 20px;
+}
 .buscador {
   display: block;
   width: 100%;
@@ -35,7 +49,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   display: flex;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -67,12 +81,12 @@ body {
   margin-bottom: 40px;
   justify-content: space-evenly;
   display: flex;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   padding: 30px 0;
 }
 .caja {
-  max-width: 400px;
+  max-width: 430px;
   background-color: #fff;
   box-shadow: 0 20px 33px 0 rgba(0,0,0,0.2);
 }
