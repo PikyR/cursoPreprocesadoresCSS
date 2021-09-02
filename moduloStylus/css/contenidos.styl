@@ -1,25 +1,28 @@
 .contenido 
+  max-width: 1600px
   margin-bottom: 40px
   justify-content: space-evenly
+  align-content: center  
   contenedor()
 
 .caja
   max-width: 430px
+  margin-bottom: 50px
   caja-sombra()
   
   &__imagen
+    width: 100%
     img
+      width: 100%
   
   &__contenido
     padding: 20px
     background-color: color-claro
 
     span
-      text-transform: uppercase
       color: color-secundario
-      font-family: fuente-titulo
+      titulos(fuente-titulo)
     h3
-      text-transform: uppercase
       font-weight: normal
-      font-family: fuente-titulo
+      titulos(fuente-titulo)
     // p

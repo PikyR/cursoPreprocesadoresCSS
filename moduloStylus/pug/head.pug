@@ -1,13 +1,22 @@
 mixin caja(imagen, category, title, summary)
-	article.caja
-		a.caja__imagen(href="#"): img(src="../images/"+imagen)
-		
-		.caja__contenido
-			span.caja__categoria=category
-			h3=title
-			p=summary
-		
-		+estadistica
+	if imagen == ""
+		article.caja
+			.caja__contenido
+				span.caja__categoria=category
+				h3=title
+				p=summary
+			
+			+estadistica
+	else
+		article.caja
+			a.caja__imagen(href="#"): img(src="../images/"+imagen)
+			
+			.caja__contenido
+				span.caja__categoria=category
+				h3=title
+				p=summary
+			
+			+estadistica
 
 mixin estadistica
 	ul.estadistica--articulos
