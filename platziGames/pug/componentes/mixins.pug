@@ -51,7 +51,7 @@ mixin estadistica--caja-con-fondo
 			i.fas.fa-comment-alt
 			span 12
 
-mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido)
+mixin caja--con-fondo-grande(imagen, categoria, titulo, contenido)
 	a.caja--con-fondo.caja--grande
 		figure.caja__imagen: img(src="../images/"+imagen)
 		.caja--con-fondo__contenido
@@ -60,7 +60,7 @@ mixin caja--con-fondo-grande (imagen, categoria, titulo, contenido)
 			p=contenido
 		+estadistica--caja-con-fondo
 
-mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
+mixin caja--con-fondo-mediana(clase, imagen, categoria, titulo, contenido)
 	a(class="caja--con-fondo caja--mediana " + clase)
 		.caja__imagen: img(src="../images/"+imagen)
 		.caja--con-fondo__contenido
@@ -68,7 +68,7 @@ mixin caja--con-fondo-mediana (clase, imagen, categoria, titulo, contenido)
 			h2=titulo
 		+estadistica--caja-con-fondo
 
-mixin caja--con-fondo-pequena (clase, imagen, categoria, titulo, contenido)
+mixin caja--con-fondo-pequena(clase, imagen, categoria, titulo, contenido)
 	a(class="caja--con-fondo caja--pequena " + clase)
 		.caja__imagen: img(src="../images/"+imagen)
 		.caja--con-fondo__contenido
