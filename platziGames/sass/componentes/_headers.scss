@@ -15,7 +15,10 @@
   padding-top: 35px;
   
   ul{
-    display: flex;
+    display: none;
+    @include media(desktop-s){
+      display: flex;
+    }
   }
 
   li {
@@ -29,7 +32,7 @@
 }
 
 .header__busqueda{
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 35px;
 
@@ -44,5 +47,9 @@
   span {
     color: $color-variacion;
     @include titulos($Fuente2);
+  }
+
+  @include media(desktop-s){
+    display: flex;
   }
 }
